@@ -1,0 +1,145 @@
+/****************************************************
+ _BASE.SCSS - Contained within this file are all your
+ resets, varriables, mixins, and any utility classes                                            
+****************************************************/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase; }
+
+p {
+  font-size: 1em; }
+
+.text-center {
+  text-align: center; }
+
+/****************************************************
+ _layout.scss - contains all the CSS that handles the
+ layout, such as the container and any grid systems                                           
+****************************************************/
+* {
+  box-sizing: border-box; }
+
+body,
+html {
+  height: 100%; }
+
+body {
+  background: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0; }
+
+.site-wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto; }
+
+.main-header {
+  padding: 0 2em;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4em 0; }
+
+.main-nav {
+  list-style: none; }
+  .main-nav .nav-link {
+    padding: 1em; }
+    .main-nav .nav-link:last-child {
+      padding-right: 0;
+      margin-right: 0; }
+
+.site-banner {
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner.jpg") no-repeat center;
+  background-size: cover;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .site-banner .banner-content {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    color: #fff; }
+    .site-banner .banner-content h1 {
+      font-size: 3em;
+      text-align: center; }
+    .site-banner .banner-content h2 {
+      font-size: 2em;
+      text-align: center; }
+
+.main-intro {
+  margin-bottom: 3em;
+  margin-top: 3em; }
+  .main-intro .btn, .main-intro .nav-btn {
+    margin-top: 2em; }
+
+.box-container {
+  margin: 5em 0;
+  justify-content: center;
+  align-items: center;
+  height: 25vh; }
+  .box-container .box {
+    flex-basis: 25%;
+    text-align: left;
+    margin-left: 4em; }
+    .box-container .box .btn, .box-container .box .nav-btn {
+      text-decoration: underline;
+      border: none;
+      color: #000;
+      padding-left: 0; }
+      .box-container .box .btn:hover, .box-container .box .nav-btn:hover {
+        background: none;
+        color: #3aafa9; }
+  .box-container .box-img {
+    flex-basis: 70%;
+    height: 50%; }
+    .box-container .box-img img {
+      width: 700px;
+      height: 300px; }
+
+#img-one {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/default-img-one.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 70%; }
+
+/****************************************************
+ _components.scss - anything reusable such as buttons,
+ navbars, cards etc.                                          
+****************************************************/
+.flex {
+  display: flex; }
+
+.flex-col {
+  flex-direction: column; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.flex-center {
+  justify-content: center;
+  align-items: center; }
+
+.btn, .nav-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  color: #3aafa9;
+  transition: 0.5s all ease-out;
+  padding: 0.5em 1em;
+  border: 1px solid #3aafa9; }
+  .btn:hover, .nav-btn:hover {
+    background: #3aafa9;
+    color: #fff; }
+
+.nav-btn {
+  border: none;
+  color: #000; }
+  .nav-btn:hover {
+    background: none;
+    color: #3aafa9; }

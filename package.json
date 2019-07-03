@@ -1,0 +1,44 @@
+{
+  "name": "aa-templateone",
+  "version": "1.0.0",
+  "description": "Aaron Asuncion Website Template V1",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "AA-WebsiteTemplateV1"
+  },
+  "keywords": [
+    "Aaron",
+    "Asuncion",
+    "Paul",
+    "AA",
+    "Website",
+    "Template",
+    "V1",
+    "Version",
+    "1",
+    "One",
+    "HTML",
+    "HTML5",
+    "CSS",
+    "CSS3",
+    "SCSS",
+    "SASS",
+    "JAVASCRIPT",
+    "JQUERY",
+    "FRONT",
+    "END",
+    "WEB",
+    "DEVELOPMENT",
+    "DEVELOPER",
+    "SENIOR"
+  ],
+  "author": "Aaron Asuncion",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
