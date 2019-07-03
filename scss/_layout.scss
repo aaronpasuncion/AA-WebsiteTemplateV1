@@ -23,6 +23,17 @@ body {
   margin: 0 auto;
 }
 
+.social-links {
+  position: fixed;
+  top: 50%;
+  right: 5%;
+
+  i {
+    font-size: 1.75em;
+    margin-bottom: 0.25em;
+  }
+}
+
 //header
 .main-header {
   padding: 0 2em;
@@ -75,7 +86,7 @@ body {
   margin-top: 3em;
 
   .btn {
-    margin-top: 2em;
+    margin-top: 1em;
   }
 }
 
@@ -112,7 +123,7 @@ body {
     background: $dark-btn-color;
     color: $paper;
     width: 75%;
-    padding: 2em 10em 2em 5em;
+    padding: 1em 10em 1em 5em;
     right: -50%;
     top: 50;
   }

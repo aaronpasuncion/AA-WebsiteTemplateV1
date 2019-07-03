@@ -37,6 +37,14 @@ body {
   height: 100%;
   margin: 0 auto; }
 
+.social-links {
+  position: fixed;
+  top: 50%;
+  right: 5%; }
+  .social-links i {
+    font-size: 1.75em;
+    margin-bottom: 0.25em; }
+
 .main-header {
   padding: 0 2em;
   justify-content: space-between;
@@ -76,7 +84,7 @@ body {
   margin-bottom: 3em;
   margin-top: 3em; }
   .main-intro .btn, .main-intro .nav-btn, .main-intro .btn-underline {
-    margin-top: 2em; }
+    margin-top: 1em; }
 
 .box-container, .img-container {
   margin: 5em 0;
@@ -101,7 +109,7 @@ body {
     background: #2b7a78;
     color: #def2f1;
     width: 75%;
-    padding: 2em 10em 2em 5em;
+    padding: 1em 10em 1em 5em;
     right: -50%;
     top: 50; }
 
