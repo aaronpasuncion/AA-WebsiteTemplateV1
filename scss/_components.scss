@@ -43,6 +43,19 @@
   color: $dark-text;
   &:hover {
     background: none;
+    color: $dark-btn-color;
+  }
+}
+
+.btn-underline {
+  @extend .btn;
+  text-decoration: underline;
+  text-transform: capitalize;
+  border: none;
+  color: $dark-text;
+  padding-left: 0;
+  &:hover {
+    background: none;
     color: $btn-color;
   }
 }

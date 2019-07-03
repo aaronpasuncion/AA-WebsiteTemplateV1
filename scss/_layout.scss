@@ -90,16 +90,10 @@ body {
     flex-basis: 25%;
     text-align: left;
     margin-left: 4em;
-    .btn {
-      text-decoration: underline;
-      border: none;
-      color: $dark-text;
-      padding-left: 0;
-      &:hover {
-        background: none;
-        color: $btn-color;
-      }
-    }
+  }
+
+  .btn {
+    margin-top: 2em;
   }
 }
 
@@ -108,7 +102,8 @@ body {
   margin: 5em;
   position: relative;
   width: 60%;
-  background: url("../img/default-img-one.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/default-img-one.jpg") no-repeat center;
   background-size: cover;
   // images
 
@@ -120,5 +115,27 @@ body {
     padding: 2em 10em 2em 5em;
     right: -50%;
     top: 50;
+  }
+}
+
+// full container
+.full-container {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/default-full-image.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  .cover-text {
+    height: 100%;
+    letter-spacing: 2em;
+    color: $paper;
+  }
+}
+
+.main-footer {
+  .footer-links {
+    .link-section {
+      margin: 2em;
+    }
   }
 }
