@@ -28,7 +28,6 @@ body {
   padding: 0 2em;
   justify-content: space-between;
   align-items: center;
-  // border: 1px solid #000;
   margin: 4em 0;
 }
 .main-nav {
@@ -85,7 +84,7 @@ body {
   margin: 5em 0;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 35vh;
 
   .box {
     flex-basis: 25%;
@@ -102,19 +101,24 @@ body {
       }
     }
   }
-  .box-img {
-    flex-basis: 70%;
-    height: 50%;
-    img {
-      width: 700px;
-      height: 300px;
-    }
-  }
 }
-#img-one {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/default-img-one.jpg") no-repeat center;
+
+.img-container {
+  @extend .box-container;
+  margin: 5em;
+  position: relative;
+  width: 60%;
+  background: url("../img/default-img-one.jpg") no-repeat center;
   background-size: cover;
-  height: 100%;
-  width: 70%;
+  // images
+
+  .img-description {
+    position: absolute;
+    background: $dark-btn-color;
+    color: $paper;
+    width: 75%;
+    padding: 2em 10em 2em 5em;
+    right: -50%;
+    top: 50;
+  }
 }

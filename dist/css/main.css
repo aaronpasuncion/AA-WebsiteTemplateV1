@@ -78,35 +78,38 @@ body {
   .main-intro .btn, .main-intro .nav-btn {
     margin-top: 2em; }
 
-.box-container {
+.box-container, .img-container {
   margin: 5em 0;
   justify-content: center;
   align-items: center;
-  height: 25vh; }
-  .box-container .box {
+  height: 35vh; }
+  .box-container .box, .img-container .box {
     flex-basis: 25%;
     text-align: left;
     margin-left: 4em; }
-    .box-container .box .btn, .box-container .box .nav-btn {
+    .box-container .box .btn, .img-container .box .btn, .box-container .box .nav-btn, .img-container .box .nav-btn {
       text-decoration: underline;
       border: none;
       color: #000;
       padding-left: 0; }
-      .box-container .box .btn:hover, .box-container .box .nav-btn:hover {
+      .box-container .box .btn:hover, .img-container .box .btn:hover, .box-container .box .nav-btn:hover, .img-container .box .nav-btn:hover {
         background: none;
         color: #3aafa9; }
-  .box-container .box-img {
-    flex-basis: 70%;
-    height: 50%; }
-    .box-container .box-img img {
-      width: 700px;
-      height: 300px; }
 
-#img-one {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/default-img-one.jpg") no-repeat center;
-  background-size: cover;
-  height: 100%;
-  width: 70%; }
+.img-container {
+  margin: 5em;
+  position: relative;
+  width: 60%;
+  background: url("../img/default-img-one.jpg") no-repeat center;
+  background-size: cover; }
+  .img-container .img-description {
+    position: absolute;
+    background: #2b7a78;
+    color: #def2f1;
+    width: 75%;
+    padding: 2em 10em 2em 5em;
+    right: -50%;
+    top: 50; }
 
 /****************************************************
  _components.scss - anything reusable such as buttons,
