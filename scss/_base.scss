@@ -33,3 +33,10 @@ p {
 .text-center {
   text-align: center;
 }
+
+// float clear-fix
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}

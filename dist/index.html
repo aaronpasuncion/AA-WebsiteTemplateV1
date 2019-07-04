@@ -16,20 +16,30 @@
   <body>
     <div class="site-wrapper">
       <div class="flex flex-center flex-col social-links">
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-github-square"></i>
-        <i class="fab fa-twitter-square"></i>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-icon"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="#" class="social-icon"><i class="fab fa-github-square"></i></a>
+        <a href="#" class="social-icon"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
       </div>
 
       <header class="main-header flex">
         <h1 class="logo">A/A</h1>
         <nav>
           <ul class="main-nav flex flex-wrap">
-            <li class="nav-link"><a href="" class="nav-btn">Home</a></li>
-            <li class="nav-link"><a href="" class="nav-btn">about</a></li>
-            <li class="nav-link"><a href="" class="nav-btn">contact</a></li>
-            <li class="nav-link"><a href="" class="nav-btn">portfolio</a></li>
+            <li class="nav-link">
+              <a href="index.html" class="nav-btn">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html" class="nav-btn">about</a>
+            </li>
+            <li class="nav-link">
+              <a href="contact.html" class="nav-btn">contact</a>
+            </li>
+            <li class="nav-link"><a href="#" class="nav-btn">portfolio</a></li>
           </ul>
         </nav>
       </header>
@@ -111,7 +121,8 @@
           <a href="" class="btn">subscribe</a>
         </div>
         <div class="full-container">
-          <div class="cover-text flex flex-center">
+          <div class="cover-text flex flex-center flex-wrap">
+            <span>/</span>
             <h1>Full</h1>
             <span>/</span>
             <h1>Container</h1>
@@ -122,7 +133,14 @@
         </div>
       </main>
       <footer class="main-footer flex flex-center flex-col">
-        <h3>Your Name Here &copy; 2019</h3>
+        <!-- <a href="" class="btn">Back To Top</a> -->
+        <div class="flex footer-links">
+          <a href="#" class="btn-underline">Home</a>
+          <a href="#" class="btn-underline">About</a>
+          <a href="#" class="btn-underline">Contact</a>
+          <a href="#" class="btn-underline">Portfolio</a>
+        </div>
+        <h2>Company Name &copy; 2019</h2>
       </footer>
     </div>
   </body>

@@ -28,8 +28,15 @@ body {
   top: 50%;
   right: 5%;
 
+  .social-icon {
+    color: $dark-text;
+    transition: 0.5s all ease-out;
+    &:hover {
+      color: $btn-color;
+    }
+  }
   i {
-    font-size: 1.75em;
+    font-size: 2em;
     margin-bottom: 0.25em;
   }
 }
@@ -132,21 +139,24 @@ body {
 // full container
 .full-container {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/default-full-image.jpg") no-repeat center;
   background-size: cover;
   position: relative;
   .cover-text {
     height: 100%;
-    letter-spacing: 2em;
+    letter-spacing: 1.5em;
     color: $paper;
+    span {
+      font-size: 1.25em;
+    }
   }
 }
 
 .main-footer {
-  .footer-links {
-    .link-section {
-      margin: 2em;
-    }
-  }
+  padding: 2em 4em;
+  height: 100%;
+  height: 25%;
+  justify-content: flex-start;
+  align-items: flex-start;
 }

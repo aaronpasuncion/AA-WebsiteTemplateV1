@@ -15,6 +15,11 @@ p {
 .text-center {
   text-align: center; }
 
+.clearfix {
+  content: "";
+  clear: both;
+  display: table; }
+
 /****************************************************
  _layout.scss - contains all the CSS that handles the
  layout, such as the container and any grid systems                                           
@@ -41,8 +46,13 @@ body {
   position: fixed;
   top: 50%;
   right: 5%; }
+  .social-links .social-icon {
+    color: #000;
+    transition: 0.5s all ease-out; }
+    .social-links .social-icon:hover {
+      color: #3aafa9; }
   .social-links i {
-    font-size: 1.75em;
+    font-size: 2em;
     margin-bottom: 0.25em; }
 
 .main-header {
@@ -115,16 +125,22 @@ body {
 
 .full-container {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/default-full-image.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/default-full-image.jpg") no-repeat center;
   background-size: cover;
   position: relative; }
   .full-container .cover-text {
     height: 100%;
-    letter-spacing: 2em;
+    letter-spacing: 1.5em;
     color: #def2f1; }
+    .full-container .cover-text span {
+      font-size: 1.25em; }
 
-.main-footer .footer-links .link-section {
-  margin: 2em; }
+.main-footer {
+  padding: 2em 4em;
+  height: 100%;
+  height: 25%;
+  justify-content: flex-start;
+  align-items: flex-start; }
 
 /****************************************************
  _components.scss - anything reusable such as buttons,
@@ -171,3 +187,51 @@ body {
   .btn-underline:hover {
     background: none;
     color: #3aafa9; }
+
+.footer-links .btn-underline {
+  margin: 1em; }
+
+.about-banner {
+  justify-content: center;
+  align-items: center;
+  height: 75%; }
+  .about-banner .about-img {
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/about-banner.jpg") no-repeat center;
+    background-size: cover; }
+  .about-banner .banner-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    width: 40%;
+    height: 100%;
+    color: #fff; }
+    .about-banner .banner-content h1 {
+      font-size: 3em;
+      text-align: center; }
+    .about-banner .banner-content h2 {
+      font-size: 2em;
+      text-align: center; }
+
+.contact-banner {
+  position: relative;
+  height: 75%;
+  width: 80%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/contact-banner.jpg") no-repeat center;
+  background-size: cover;
+  float: right;
+  margin-bottom: 2em; }
+  .contact-banner .banner-content {
+    position: absolute;
+    left: -25%;
+    top: 20%;
+    background: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    height: 60%;
+    color: #fff;
+    text-align: left; }
+    .contact-banner .banner-content h1 {
+      font-size: 3em;
+      text-align: center; }
+    .contact-banner .banner-content h2 {
+      font-size: 2em;
+      text-align: center; }
