@@ -93,8 +93,8 @@ body {
 
   .banner-content {
     position: absolute;
-    left: 15%;
-    top: 40%;
+    left: 5%;
+    top: 30%;
     color: $white-text;
     h1 {
       font-size: 3em;
@@ -121,14 +121,15 @@ body {
   margin: 5em 0;
   justify-content: center;
   align-items: center;
-  height: 35vh;
-  p {
-  }
+  height: 40vh;
 
   .box {
     flex-basis: 25%;
     text-align: left;
     margin-left: 4em;
+    .btn {
+      padding: 0;
+    }
   }
 }
 
@@ -137,10 +138,16 @@ body {
   margin: 5em;
   position: relative;
   width: 60%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/default-img-one.jpg") no-repeat center;
+  background: url("../img/default-img-one.jpg") no-repeat center;
   background-size: cover;
-  // images
+  // img box
+  .img-box {
+    display: none;
+    background: url("../img/default-img-one.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
 
   .img-description {
     position: absolute;

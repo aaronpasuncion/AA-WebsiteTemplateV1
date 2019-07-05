@@ -9,18 +9,144 @@
     display: flex;
     flex-direction: column;
   }
+  .box-container {
+    .box {
+      flex-basis: 20%;
+    }
+  }
+
+  // sub pages
+  .contact-banner {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .banner-content {
+      position: static;
+      width: 75%;
+      height: 80%;
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .site-banner {
+    .banner-content {
+      position: static;
+    }
+  }
+
+  // subpages
+  .about-banner {
+    flex-direction: column;
+    .about-img {
+      width: 100%;
+    }
+    .banner-content {
+      height: 50%;
+      width: 100%;
+      //   flex-direction: row;
+      h1 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .contact-banner {
+    width: 100%;
+    height: 80%;
+    .banner-content {
+      top: 20%;
+      left: 20%;
+      width: 65%;
+      height: 70%;
+      min-height: 70%;
+    }
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .site-wrapper {
+    width: 100%;
+  }
+
+  .main-header {
+    margin-top: 0;
+  }
+
+  .site-banner {
+    .banner-content {
+      position: static;
+    }
+  }
+
+  .main-intro {
+    margin-top: 0;
+  }
+
+  .box-container {
+    .box {
+      text-align: center;
+      margin: 0 auto;
+      flex-basis: 100%;
+    }
+  }
+
+  .img-container {
+    margin: 0;
+    background: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    .img-box {
+      display: block;
+      height: 30vh;
+    }
+
+    .img-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: static;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .social-links {
+    display: none;
+  }
+
+  .box-container {
+    height: 100%;
+  }
+
+  .full-container {
+    .cover-text {
+      flex-direction: column;
+    }
+  }
+
+  .main-footer {
+    flex-direction: column;
+  }
+
+  // components
+  .btn {
+    font-size: 1em;
+  }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 }
 
 /* Custom, iPhone Retina */
