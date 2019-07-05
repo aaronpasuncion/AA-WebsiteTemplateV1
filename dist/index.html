@@ -27,6 +27,11 @@
       </div>
 
       <header class="main-header flex">
+        <div class="menu-btn" id="open-menu">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
         <h1 class="logo">A/A</h1>
         <nav>
           <ul class="main-nav flex flex-wrap">
@@ -132,7 +137,7 @@
           </div>
         </div>
       </main>
-      <footer class="main-footer flex flex-center flex-col">
+      <footer class="main-footer flex flex-center">
         <!-- <a href="" class="btn">Back To Top</a> -->
         <div class="flex footer-links">
           <a href="#" class="btn-underline">Home</a>
@@ -143,5 +148,40 @@
         <h2>Company Name &copy; 2019</h2>
       </footer>
     </div>
+    <div id="overlay">
+      <img src="img/close.svg" class="close-btn" id="close-menu" alt="" />
+      <ul>
+        <li>
+          <a href="#">home</a>
+          <span>hurry, get back to the choppa!</span>
+        </li>
+        <li>
+          <a href="#">about us</a>
+          <span>hurry, get back to the choppa!</span>
+        </li>
+        <li>
+          <a href="#">services</a>
+          <span>hurry, get back to the choppa!</span>
+        </li>
+        <li>
+          <a href="#">contact</a>
+          <span>hurry, get back to the choppa!</span>
+        </li>
+      </ul>
+    </div>
+    <script>
+      var overlay = document.getElementById("overlay");
+      var closeMenu = document.getElementById("close-menu");
+
+      document
+        .getElementById("open-menu")
+        .addEventListener("click", function() {
+          overlay.classList.add("show-menu");
+        });
+
+      closeMenu.addEventListener("click", function() {
+        overlay.classList.remove("show-menu");
+      });
+    </script>
   </body>
 </html>

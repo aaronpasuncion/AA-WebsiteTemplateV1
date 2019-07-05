@@ -47,15 +47,24 @@
         <!-- <div class="contact-img"></div> -->
         <div class="banner-content flex flex-col">
           <h1>contact me</h1>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            molestiae! Quisquam cumque ratione voluptatibus? Nisi in similique
-            asperiores doloremque odio dolorem accusamus ex. Rem, ipsam?
-          </p>
+          <form action="#" class="flex flex-center flex-col">
+            <label for="name">Name</label>
+            <input class="form-input" type="text" name="name" />
+            <label for="email">Email</label>
+            <input class="form-input" type="email" name="email" />
+            <label for="message">Message</label>
+            <textarea
+              class="form-input"
+              name="message"
+              cols="30"
+              rows="8"
+            ></textarea>
+            <input class="btn" type="submit" value="Submit" />
+          </form>
         </div>
       </div>
 
-      <footer class="main-footer flex flex-center flex-col clearfix">
+      <footer class="main-footer flex flex-center clearfix">
         <!-- <a href="" class="btn">Back To Top</a> -->
         <div class="flex footer-links">
           <a href="#" class="btn-underline">Home</a>

@@ -2,7 +2,7 @@
 .about-banner {
   justify-content: center;
   align-items: center;
-  height: 75%;
+  height: 80%;
   //   width: 100%;
 
   .about-img {
@@ -51,10 +51,29 @@
     h1 {
       font-size: 3em;
       text-align: center;
+      margin-bottom: 0.25em;
     }
-    h2 {
-      font-size: 2em;
-      text-align: center;
+    form {
+      textarea,
+      input,
+      label {
+        margin-bottom: 0.5em;
+      }
+      .form-input {
+        width: 50%;
+      }
+      .btn {
+        background: none;
+        border-color: $white-text;
+        color: $white-text;
+        font-size: 1em;
+        margin-top: 0.5em;
+        cursor: pointer;
+        &:hover {
+          background: $white-text;
+          color: $dark-text;
+        }
+      }
     }
   }
 }
