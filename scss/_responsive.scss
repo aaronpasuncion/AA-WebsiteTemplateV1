@@ -24,7 +24,7 @@
 
     .img-box {
       display: block;
-      height: 30vh;
+      height: 400px;
     }
 
     .img-description {
@@ -67,8 +67,10 @@
   // subpages
   .about-banner {
     flex-direction: column;
+    height: 100%;
     .about-img {
       width: 100%;
+      height: 445px;
     }
     .banner-content {
       height: 50%;
