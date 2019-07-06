@@ -15,7 +15,32 @@
     }
   }
 
-  // sub pages
+  .img-container {
+    margin: 0;
+    background: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    .img-box {
+      display: block;
+      height: 30vh;
+    }
+
+    .img-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: static;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  // subpages
   .contact-banner {
     width: 100%;
     height: 80%;
@@ -24,8 +49,9 @@
     align-items: center;
     .banner-content {
       position: static;
-      width: 75%;
-      height: 80%;
+
+      width: 450px;
+      height: 450px;
     }
   }
 }
@@ -53,18 +79,6 @@
         text-align: center;
         margin-bottom: 0;
       }
-    }
-  }
-
-  .contact-banner {
-    width: 100%;
-    height: 80%;
-    .banner-content {
-      top: 20%;
-      left: 20%;
-      width: 65%;
-      height: 70%;
-      min-height: 70%;
     }
   }
 }
@@ -97,30 +111,6 @@
     }
   }
 
-  .img-container {
-    margin: 0;
-    background: none;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-
-    .img-box {
-      display: block;
-      height: 30vh;
-    }
-
-    .img-description {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: static;
-      text-align: center;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-    }
-  }
   .social-links {
     display: none;
   }
