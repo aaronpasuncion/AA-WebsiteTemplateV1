@@ -400,6 +400,12 @@ body {
 @media only screen and (max-width: 992px) {
   .site-banner .banner-content {
     position: static; }
+  .box-container, .img-container {
+    margin-bottom: 2em;
+    height: 100%; }
+    .box-container .box, .img-container .box {
+      text-align: center;
+      flex-basis: 100%; }
   .about-banner {
     flex-direction: column;
     height: 100%; }
@@ -424,14 +430,8 @@ body {
     position: static; }
   .main-intro {
     margin-top: 0; }
-  .box-container .box, .img-container .box {
-    text-align: center;
-    margin: 0 auto;
-    flex-basis: 100%; }
   .social-links {
     display: none; }
-  .box-container, .img-container {
-    height: 100%; }
   .full-container .cover-text {
     flex-direction: column; }
   .main-footer {

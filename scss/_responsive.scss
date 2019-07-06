@@ -64,6 +64,16 @@
     }
   }
 
+  // box container
+  .box-container {
+    margin-bottom: 2em;
+    height: 100%;
+    .box {
+      text-align: center;
+      flex-basis: 100%;
+    }
+  }
+
   // subpages
   .about-banner {
     flex-direction: column;
@@ -105,20 +115,8 @@
     margin-top: 0;
   }
 
-  .box-container {
-    .box {
-      text-align: center;
-      margin: 0 auto;
-      flex-basis: 100%;
-    }
-  }
-
   .social-links {
     display: none;
-  }
-
-  .box-container {
-    height: 100%;
   }
 
   .full-container {
